@@ -1,0 +1,29 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3 class="txt-center center-block">Hakkimizda</h3>
+            @foreach (var x in Model)
+            {
+                <img style="width:1000px;" src="@x.FotoUrl" alt="" />
+
+                <p> @x.Aciklama </p>
+                <p class="text-uppercase">
+                    Biz sizin işinizin daha uğurlu olması üçün bütün gücümüzlə çalışırıq!
+                    Sifariş vermək, ya da hər hansı bir sorğu göndərmək üçün studiyanın istənilən kanalı ilə bağlantı qura bilərsiniz. Əlaqə saxlamaq üçün TheCalilsoy Instagram hesabina yaza bilərsiniz.
+                </p>
+            }
+
+
+        </div>
+    </div>
+</div>
+
+
+
